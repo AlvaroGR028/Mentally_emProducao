@@ -1,5 +1,4 @@
-# Mentally_emProducao
-# MENTALLY
+# MENTALLY_emProducao
 
 `Tecnologia em Análise e Desenv. de Sistemas`
 
@@ -21,7 +20,7 @@ Um site para auxiliar pessoas em busca de saúde mental a encontrarem o tratamen
 
 # Documentação
 
-Está sendo devidamente desenvolvida e documentada [...]
+Está sendo devidamente desenvolvida [...]
 
 # Hospedagem
 
