@@ -1,0 +1,59 @@
+
+
+.quadrado {
+    -webkit-box-shadow: 2px 2px 15px 6px rgba(0, 0, 0, 0.34);
+    box-shadow: 2px 2px 15px 6px rgba(0, 0, 0, 0.34);
+    border-radius: 5px;
+    width: 300px;
+    height: 275px;
+    background-color: rgb(66, 136, 177);
+    margin: 0 auto;
+}
+
+
+button {
+    -webkit-box-shadow: 2px 2px 15px 6px rgba(0, 0, 0, 0.34);
+    box-shadow: 2px 2px 15px 6px rgba(0, 0, 0, 0.34);
+    border-radius: 5px;
+    padding: 7px 5px;
+    width: 40px;
+    color: white;
+    background-color: rgb(16, 85, 169);
+    border: 1px solid black;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 30%;
+    margin-top: 5%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  label, input {
+    margin: 5px;
+  }
+
+  ul {
+    list-style: none;
+  }
+  
+
+  .dropName{
+    display: flex;
+    align-items: center;
+    }
+
+    .fixed-footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      }

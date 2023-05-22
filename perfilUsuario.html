@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mentally</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <!--header CSS -->
+  <link rel="stylesheet" href="src/css/header.css">
+  <link rel="stylesheet" href="src/css/perfil.css">
+
+</head>
+
+<body onload="init()">
+
+  <header>
+		<nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+			<a class="navbar-brand" href="index.html"><img src="src/Imagens/Mentally.png" alt="..."
+					class="rounded-circle" width="100"></a>
+
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+				aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+				<!-- lado esquerdo -->
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="index.html">Home <span class="sr-only">(página atual)</span></a>
+					</li>
+
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Espaço do Usuário
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="espacoUsuario.HTML">Espaço do Usuário</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="agendamentos/agendar.HTML">Agende sua Consulta Online</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="agendamentos/agendamento.HTML">Confira seus agendamentos</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="agendamentos/historicoConsultas.HTML">Historico de
+								consultas</a>
+						</div>
+					</li>
+				</ul>
+
+				<div>								
+					
+					<ul class="navbar-nav mr-0">
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle dropName" href="#" id="navbarDropdown" role="button"
+								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <p id='logado'></p> </a>	
+
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="perfilUsuario.html">Alterar Perfil</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" onclick='sair()'>Sair</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+  <br>
+
+  <div class="container">
+    <div class="row">
+      <div id="msg" class="col-sm-10 offset-sm-1 ">
+        <!--<div class="alert alert-warning">Contato não encontrado.</div>-->
+      </div>
+    </div>
+
+    <form id="form-contato">
+      <div class="form-group row">
+        <div class="col-sm-4">
+          <label for="inputId">Id</label>
+          <input type="text" class="form-control" id="inputId" placeholder="ID" disabled>
+        </div>
+        <div class="col-sm-8">
+          <label for="inputNome">Nome (*)</label>
+          <input type="text" class="form-control" id="inputNome" required placeholder="Informe o nome completo">
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <div class="col-sm-7">
+          <label for="inputEmail">E-mail (*)</label>
+          <input type="email" class="form-control" id="inputEmail" required placeholder="Informe o e-mail">
+        </div>
+        <div class="col-sm-5">
+          <label for="inputTelefone">Telefone (*)</label>
+          <input type="tel" class="form-control" id="inputTelefone" required placeholder="Telefone">
+        </div>
+      </div>
+
+      <div class="form-group row"><!--pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"-->
+        <div class="col-sm-4">
+          <label for="inputCPF">CPF(*)</label>
+          <input type="number" class="form-control" id="inputCPF" required placeholder="Informe seu CPF">
+        </div>
+        <div class="col-sm-4">
+          <label for="inputdtnasc">Nascimento (*)</label>
+          <input type="date" class="form-control" id="inputdtnasc" required placeholder="Data">
+        </div>
+        <div class="col-sm-4">
+          <label for="inputGenero">Genero (*)</label>
+          <input type="text" class="form-control" id="inputGenero" required placeholder="Gênero">
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <div class="col-sm-6">
+          <label for="inputAddress">Endereço</label>
+          <input type="text" class="form-control" id="inputAddress" required placeholder="Rua Aguas, nº 0, bairro">
+        </div>
+
+        <div class="col-sm-6">
+          <label for="inputAddress2">Complemento</label>
+          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartamento, hotel, casa, etc.">
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <div class="col-sm-4">
+          <label for="inputCity">Cidade</label>
+          <input type="text" class="form-control" id="inputCity" required placeholder="Informe Endereco">
+        </div>
+        <div class="col-sm-4">
+          <label for="inputEstado">Estado</label>
+          <select id="inputEstado" class="form-control">
+            <option selected>Escolher...</option>
+            <option> Acre (AC) </option>
+            <option> Alagoas (AL) </option>
+            <option> Amapá (AP) </option>
+            <option> Amazonas (AM) </option>
+            <option> Bahia (BA) </option>
+            <option> Ceará (CE) </option>
+            <option> Distrito Federal (DF) </option>
+            <option> Espírito Santo (ES) </option>
+            <option> Goiás (GO) </option>
+            <option> Maranhão (MA) </option>
+            <option> Mato Grosso (MT) </option>
+            <option> Mato Grosso do Sul (MS) </option>
+            <option> Minas Gerais (MG) </option>
+            <option> Pará (PA) </option>
+            <option> Paraíba (PB) </option>
+            <option> Paraná (PR) </option>
+            <option> Pernambuco (PE) </option>
+            <option> Piauí (PI) </option>
+            <option> Rio de Janeiro (RJ) </option>
+            <option> Rio Grande do Norte (RN) </option>
+            <option> Rio Grande do Sul (RS) </option>
+            <option> Rondônia (RO) </option>
+            <option> Roraima (RR) </option>
+            <option> Santa Catarina (SC) </option>
+            <option> São Paulo (SP) </option>
+            <option> Sergipe (SE) </option>
+            <option> Tocantins (TO) </option>
+          </select>
+        </div>
+        <div class="col-sm-4">
+          <label for="inputCEP">CEP</label>
+          <input type="CEP" class="form-control" id="inputCEP" placeholder="Informe seu CEP">
+        </div>
+      </div>
+
+
+  </div>
+  <div class="form-group row">
+    <div class="col-sm-4">
+      <small>(*) Campos obrigatórios</small>
+    </div>
+  </div>
+  <div class="form-group row">
+    <div class="col-sm-12">
+      <input type="button" class="btn btn-success" id="btnInsert" value="Inserir">
+      <input type="button" class="btn btn-warning" id="btnUpdate" value="Alterar">
+      <input type="button" class="btn btn-danger" id="btnDelete" value="Excluir">
+      <input type="button" class="btn btn-secondary" id="btnClear" value="Limpar Form">
+      <!--<a href="lista_contatos.html"><input type="button" class="btn btn-warning" id="btnClear" value="Pesquisar Contatos"></a>-->
+    </div>
+  </div>
+  </form>
+
+  <div class="row">
+    <div class="col-sm-12">
+      <table id="grid-contatos" class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nome</th>
+            <th scope="col">E-mail</th>
+            <th scope="col">Telefone</th>
+            <th scope="col">CPF</th>
+            <th scope="col">Nascimento</th>
+            <th scope="col">Genero</th>
+            <th scope="col">Endereço</th>
+            <th scope="col">Complemento</th>
+            <th scope="col">Cidade</th>
+            <th scope="col">Estado</th>
+            <th scope="col">CEP</th>
+          </tr>
+        </thead>
+        <tbody id="table-contatos">
+          <tr>
+            <td scope="row">1</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="src/js/app.js"></script>
+  <script>
+    function exibeContatos() {
+      // Remove todas as linhas do corpo da tabela
+      $("#table-contatos").html("");
+
+      // Popula a tabela com os registros do banco de dados
+      for (i = 0; i < db.data.length; i++) {
+        let contato = db.data[i];
+        $("#table-contatos").append(`<tr><td scope="row">${contato.id}</td>
+                                              <td>${contato.nome}</td>
+                                              <td>${contato.email}</td>
+                                              <td>${contato.telefone}</td>
+                                              <td>${contato.CPF}</td>
+                                              <td>${contato.dtnasc}</td>
+                                              <td>${contato.Genero}</td>
+                                              <td>${contato.Endereco}</td>
+                                              <td>${contato.complemento}</td>
+                                              <td>${contato.Cidade}</td>
+                                              <td>${contato.estado}</td>
+                                              <td>${contato.CEP}</td>
+                                          </tr>`);
+      }
+    }
+
+    function init() {
+      // Adiciona funções para tratar os eventos 
+      $("#btnInsert").click(function () {
+        // Verfica se o formulário está preenchido corretamente
+        if (!$('#form-contato')[0].checkValidity()) {
+          displayMessage("Preencha o formulário corretamente.");
+          return;
+        }
+
+        // Obtem os valores dos campos do formulário
+        let campoNome = $("#inputNome").val();
+        let campoEmail = $('#inputEmail').val();
+        let campoTelefone = $("#inputTelefone").val();
+        let campoCPF = $("#inputCPF").val();
+        let campodtnasc = $("#inputdtnasc").val();
+        let campoGenero = $("#inputGenero").val();
+        let campoEndereco = $("#inputAddress").val();
+        let campoComplemento = $("#inputAddress2").val();
+        let campoCidade = $("#inputCity").val();
+        let campoEstado = $("#inputEstado").val();
+        let campoCEP = $('#inputCEP').val();
+
+        let contato = {
+          nome: campoNome,
+          email: campoEmail,
+          telefone: campoTelefone,
+          CPF: campoCPF,
+          dtnasc: campodtnasc,
+          Genero: campoGenero,
+          Endereco: campoEndereco,
+          complemento: campoComplemento,
+          Cidade: campoCidade,
+          estado: campoEstado,
+          CEP: campoCEP
+        };
+
+
+
+
+        insertContato(contato);
+
+        // Reexibe os contatos
+        exibeContatos();
+
+        // Limpa o formulario
+        $("#form-contato")[0].reset();
+      });
+
+      // Intercepta o click do botão Alterar
+      $("#btnUpdate").click(function () {
+        // Obtem os valores dos campos do formulário
+        let campoId = $("#inputId").val();
+        if (campoId == "") {
+          displayMessage("Selecione um contato para ser alterado.");
+          return;
+        }
+        let campoNome = $("#inputNome").val();
+        let campoEmail = $('#inputEmail').val();
+        let campoTelefone = $("#inputTelefone").val();
+        let campoCPF = $("#inputCPF").val();
+        let campodtnasc = $("#inputdtnasc").val();
+        let campoGenero = $("#inputGenero").val();
+        let campoEndereco = $("#inputAddress").val();
+        let campoComplemento = $("#inputAddress2").val();
+        let campoCidade = $("#inputCity").val();
+        let campoEstado = $("#inputEstado").val();
+        let campoCEP = $('#inputCEP').val();
+
+        let contato = {
+          nome: campoNome,
+          email: campoEmail,
+          telefone: campoTelefone,
+          CPF: campoCPF,
+          dtnasc: campodtnasc,
+          Genero: campoGenero,
+          Endereco: campoEndereco,
+          complemento: campoComplemento,
+          Cidade: campoCidade,
+          estado: campoEstado,
+          CEP: campoCEP
+        };
+
+        updateContato(parseInt(campoId), contato);
+
+        // Reexibe os contatos
+        exibeContatos();
+
+        // Limpa o formulario
+        $("#form-contato")[0].reset();
+      });
+
+      // Intercepta o click do botão Excluir
+      $("#btnDelete").click(function () {
+        let campoId = $("#inputId").val();
+        if (campoId == "") {
+          displayMessage("Selecione um contato a ser excluído.");
+          return;
+        }
+        deleteContato(parseInt(campoId));
+
+        // Reexibe os contatos
+        exibeContatos();
+
+        // Limpa o formulario
+        $("#form-contato")[0].reset();
+      });
+
+      // Intercepta o click do botão Listar Contatos
+      $("#btnClear").click(function () {
+        $("#form-contato")[0].reset();
+      });
+
+      // Oculta a mensagem de aviso após alguns segundos
+      $('#msg').bind("DOMSubtreeModified", function () {
+        window.setTimeout(function () {
+          $(".alert").fadeTo(500, 0).slideUp(500, function () {
+            $(this).remove();
+          });
+        }, 5000);
+      });
+
+      // Preenche o formulário quando o usuario clicar em uma linha da tabela 
+      $("#grid-contatos").on("click", "tr", function (e) {
+        let linhaContato = this;
+        colunas = linhaContato.querySelectorAll("td");
+
+        $("#inputId").val(colunas[0].innerText);
+        $("#inputNome").val(colunas[1].innerText);
+        $("#inputEmail").val(colunas[2].innerText);
+        $("#inputTelefone").val(colunas[3].innerText);
+        $("#inputCPF").val(colunas[4].innerText);
+        $("#inputdtnasc").val(colunas[5].innerText);
+        $("#inputGenero").val(colunas[6].innerText);
+        $("#inputAddress").val(colunas[7].innerText);
+        $("#inputAddress2").val(colunas[8].innerText);
+        $("#inputCity").val(colunas[9].innerText);
+        $("#inputEstado").val(colunas[10].innerText);
+        $("#inputCEP").val(colunas[11].innerText);
+
+      });
+
+      exibeContatos();
+    }
+  </script>
+  <br>
+
+
+  <footer class="border-top text-muted bg-dark">
+    <div class="container">
+      <div class="row py-1">
+        <div class="col-12 text-center text-md-center">
+          <img src="src/Imagens/puc.png" class="img-fluid" style="max-width: 10%; min-width: 60px;">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript (Opcional) -->
+	<script src="src/js/nomeUser.js"></script>
+
+  <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

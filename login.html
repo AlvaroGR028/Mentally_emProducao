@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mentally</title>
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<!--header CSS -->
+	<link rel="stylesheet" href="src/css/header.css">
+	<link rel="stylesheet" type="text/css" href="src/css/login.css">
+</head>
+
+<body>
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+			<a class="navbar-brand" href="index.html"><img src="src/Imagens/Mentally.png" alt="..."
+					class="rounded-circle" width="100"></a>
+
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+				aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+				<!-- lado esquerdo -->
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="index.html">Home <span class="sr-only">(página atual)</span></a>
+					</li>
+
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Espaço do Usuário
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="login.HTML">Espaço do Usuário</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="login.HTML">Agende sua Consulta Online</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="login.HTML">Confira seus agendamentos</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="login.HTML">Historico de consultas</a>
+						</div>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link" href="#">O que oferecemos?</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="sobre.HTML">Quem somos?</a>
+					</li>
+				</ul>
+				<a href="cadastro.HTML">
+					<button type="button" class="btn btn-outline-dark mr-2">Cadastro</button>
+				</a>
+				<a href="login.HTML">
+					<button type="button" class="btn btn-outline-dark">Login</button>
+				</a>
+			</div>
+		</nav>
+	</header>
+	<br><br>
+	<main>
+		<div class='container-login'>
+			<div class='card'>
+			  <h1> Entrar </h1>
+		
+			  <div id='msgError'></div>
+		
+			  <div class='label-float'>
+				<input type='text' id='usuario' paceholder='' required>
+				<label id='userLabel' for='usuario'>Usuario</label>
+			  </div>
+		
+			  <div class='label-float'>
+				<input type='password' id='senha' paceholder='' required>
+				<label id='senhaLabel' for='senha'>Senha</label>
+				<i class="fa fa-eye" aria-hidden="true"></i>
+			  </div>
+		
+			  <div class='justify-center'>
+				<button class="btn btn-secondary btn-lg btn-block" onclick='entrar()'>Entrar</button>
+			  </div>
+		
+			  <div class='justify-center'>
+				<hr>
+			  </div>
+		
+			  <p> Não tem uma conta?
+				<a href='cadastro.html'> Cadastre-se </a>
+			  </p>
+		
+			</div>
+		  </div>
+
+	</main>
+	<br><br>
+
+
+	<footer class="border-top text-muted bg-dark">
+		<div class="container">
+			<div class="row py-1">
+				<div class="col-12 text-center text-md-center">
+					<img src="src/Imagens/puc.png" class="img-fluid" style="max-width: 10%; min-width: 60px;">
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<!-- JavaScript (Opcional) -->
+	<script src="src/js/login.js"></script>
+	
+	<!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+		integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+		integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>

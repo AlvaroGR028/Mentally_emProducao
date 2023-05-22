@@ -1,0 +1,56 @@
+#jumbotron-inicial {
+    background-image: linear-gradient(to bottom, #b967da, #ffffff);
+    border-radius: 0;
+}
+.lead {
+  font-size: 24px;
+}
+
+
+
+.displayInicial, .leadInicial, #frase{
+    text-align: center;
+}
+.grupo-de-imagens {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .grupo-de-imagens img {
+    margin: 0 10px;
+    max-width: 20%;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+
+  #oferecemos {
+    scroll-margin-top: 10em;
+  }
+  
+  .setas-frase {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+    margin-top: 0px; /* ajuste o valor aqui */
+
+  }
+
+    .seta-direita {
+    margin-left: 10px;
+  }
+      
+  .setas-frase:hover {
+    color: #b967da;
+  }
+  
+
+
+
+
