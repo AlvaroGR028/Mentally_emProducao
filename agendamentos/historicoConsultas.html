@@ -19,7 +19,8 @@
 <body>
 	<header>
 		<nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-			<a class="navbar-brand" href="../index.html"><img src="../src/Imagens/Mentally.png" alt="..." class="rounded-circle" width="100"></a>
+			<a class="navbar-brand" href="../index.html"><img src="../src/Imagens/Mentally.png" alt="..."
+					class="rounded-circle" width="100"></a>
 
 
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
@@ -40,22 +41,24 @@
 							Espaço do Usuário
 						</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="../espacoUsuario.html">Espaço do Usuário</a>
+							<a class="dropdown-item" href="../espacoUsuario.HTML">Espaço do Usuário</a>
 							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="agendar.html">Agende sua Consulta Online</a>
+							<a class="dropdown-item" href="agendar.HTML">Agende sua Consulta Online</a>
 							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="agendamento.html">Confira seus agendamentos</a>
+							<a class="dropdown-item" href="agendamento.HTML">Confira seus agendamentos</a>
 							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="historicoConsultas.html">Historico de consultas</a>
+							<a class="dropdown-item" href="historicoConsultas.HTML">Historico de consultas</a>
 						</div>
 					</li>
 
 				</ul>
-				<div>								
+				<div>
 					<ul class="navbar-nav mr-0">
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle dropName" href="#" id="navbarDropdown" role="button"
-								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <p id='logado'></p> </a>	
+								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<p id='logado'></p>
+							</a>
 
 							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 								<a class="dropdown-item" href="../perfilUsuario.html">Alterar Perfil</a>
@@ -69,113 +72,112 @@
 		</nav>
 	</header>
 
+	<div class="botoesSuperiores">
+		<a type="button" class="btn btn-info" href="agendar.HTML">Agendar</a>
+		<a type="button" class="btn btn-info" href="agendamento.HTML">agendamentos</a>
+	</div>
+
 	<main>
-		<a type="button" class="btn btn-info" href="agendar.html">Agendar</a>
-		<a type="button" class="btn btn-info" href="agendamento.html">agendamentos</a>
+
+		<div class="retangulo">
+			<p>Histórico de consultas:</p>
+			<div class="view">
+
+				<div class="quadradolistahistorico">
+					<ul id="lista">
+				</div>
+
+				<div id="infoBox">
+					<section id="starBox">
+						<div class="rating">
+							<p>Atenção do Profissional:</p>
+							<div class="stars">
+								<input type="radio" id="star5" name="rating1" value="5" cass="star-icon ativo">
+								<label for="star5"></label>
+								<input type="radio" id="star4" name="rating1" value="4">
+								<label for="star4"></label>
+								<input type="radio" id="star3" name="rating1" value="3">
+								<label for="star3"></label>
+								<input type="radio" id="star2" name="rating1" value="2">
+								<label for="star2"></label>
+								<input type="radio" id="star1" name="rating1" value="1">
+								<label for="star1"></label>
+							</div>
+						</div>
+						<div class="rating">
+							<p>Pontualidade:</p>
+							<div class="stars">
+								<input type="radio" id="star10" name="rating2" value="5">
+								<label for="star10"></label>
+								<input type="radio" id="star9" name="rating2" value="4">
+								<label for="star9"></label>
+								<input type="radio" id="star8" name="rating2" value="3">
+								<label for="star8"></label>
+								<input type="radio" id="star7" name="rating2" value="2">
+								<label for="star7"></label>
+								<input type="radio" id="star6" name="rating2" value="1">
+								<label for="star6"></label>
+							</div>
+						</div>
+						<div class="rating">
+							<p>Satisfação com a sessão:</p>
+							<div class="stars">
+								<input type="radio" id="star15" name="rating3" value="5">
+								<label for="star15"></label>
+								<input type="radio" id="star14" name="rating3" value="4">
+								<label for="star14"></label>
+								<input type="radio" id="star13" name="rating3" value="3">
+								<label for="star13"></label>
+								<input type="radio" id="star12" name="rating3" value="2">
+								<label for="star12"></label>
+								<input type="radio" id="star11" name="rating3" value="1">
+								<label for="star11"></label>
+							</div>
+						</div>
+					</section>
+
+
+					<!-- Caixa de texto -->
+					<div class="comments">
+						<p>Comentários ajudam a ver como podemos te ajudar! </p>
+						<textarea id="comment" rows="5" cols="70"
+							placeholder="Digite seus comentários aqui... (Máx. 400 Caracteres)" maxlength="400"></textarea>
+						<form name="Cadastro" method="GET" action="src/js/script.js"></form>
+					</div>
+
+
+					<div class="caixaBotoes">
+						<button id="saveBtn">Enviar Avaliação</button>
+						<button id="limpar" href="#">Limpar</button>
+					</div>
+
+				</div>
+
+			</div>
+
 
 	</main>
 
-	<br>
 
-	<div class="retangulo">
-        <p>Histórico de consultas:</p>
-        <div class="view">
-            <div class="quadradolistahistorico">
-                <ul id="lista">
-            </div>
-        </div>
-
-	</div>
-
-	<br>
-	<br>
-
-	<div class="text-center">
-<!-- Botão para acionar modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ExemploModalCentralizado">
-	Demonstração de avaliação
-  </button>
-  
-  <!-- Modal -->
-  <div class="modal fade" id="ExemploModalCentralizado" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
-	<div class="modal-dialog modal-dialog-centered" role="document">
-	  <div class="modal-content">
-		<div class="modal-header">
-		  <h5 class="modal-title" id="TituloModalCentralizado">Avaliação da Consulta</h5>
-		  <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
-			<span aria-hidden="true">&times;</span>
-		  </button>
+	<section class="boxAvaliacoes">
+		<div id="reviews" class="reviews">
+			<p>Avaliações Recentes:</p>
+			<div id="reviewCards"></div>
 		</div>
-		<div class="modal-body">
 
-			<section class="align-items-center">
-				<p>Atenção do Profissional</p>
-				<ul class="avaliacao" id="atencao">
-		
-					<li class="star-icon ativo" data-avaliacao="1"></li>
-					<li class="star-icon" data-avaliacao="2"></li>
-					<li class="star-icon" data-avaliacao="3"></li>
-					<li class="star-icon" data-avaliacao="4"></li>
-					<li class="star-icon" data-avaliacao="5"></li>
-		
-				</ul>
-				<p>Pontualidade</p>
-				<ul class="avaliacao" id="pontualidade">
-		
-					<li class="star-icon ativo" data-avaliacao="1"></li>
-					<li class="star-icon" data-avaliacao="2"></li>
-					<li class="star-icon" data-avaliacao="3"></li>
-					<li class="star-icon" data-avaliacao="4"></li>
-					<li class="star-icon" data-avaliacao="5"></li>
-		
-				</ul>
-				<p>Satisfação com a sessão</p>
-				<ul class="avaliacao" id="satisfacao">
-		
-					<li class="star-icon ativo" data-avaliacao="1"></li>
-					<li class="star-icon" data-avaliacao="2"></li>
-					<li class="star-icon" data-avaliacao="3"></li>
-					<li class="star-icon" data-avaliacao="4"></li>
-					<li class="star-icon" data-avaliacao="5"></li>
-		
-				</ul>
-		
-				<div>
-					<p>Comentários ajudam a ver como podemos te ajudar! <br>(Máx. 400 Caracteres)</p>
+
+		<footer class="border-top text-muted bg-dark ">
+
+			<div class="container">
+				<div class="row py-1">
+					<div class="col-12 text-center text-md-center">
+						<img src="../src/Imagens/puc.png" class="img-fluid" style="max-width: 10%; min-width: 60px;">
+					</div>
 				</div>
-			
-				<form name="Cadastro" method="GET" action="src/js/script.js"></form>
-				
-				<!-- Caixa de texto -->
-				<textarea rows="6" cols="60%" name="comentarios" id="coment" maxlength="400">Deixe seu comentário</textarea><br>
-				
-			</section>
+			</div>
 
-
-		</div>
-		<div class="modal-footer">
-		  <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-		  <input class="btn btn-primary" type="submit" value="Salvar" data-dismiss="modal">
-		</div>
-	  </div>
-	</div>
-  </div>
-
-<!-- <p> Será feito um crud que ao terminar a consulta Online, o card dela virá para está página.</p>
-<p> Assim vai ser criado uma listagem de consultas feitas, onde cada uma delas irá armazenar sua própria avaliação. A dita avaliação será executada pelo modal que abrirá ao clicar no Card.</p>
-<p>As informações das avaliações ficaram salvas e poderam ser atualizadas quando o usuário quiser.</p> -->
-</div>
-
-<footer class="border-top text-muted bg-dark fixed-footer">
-	<div class="container">
-	  <div class="row py-1">
-		<div class="col-12 text-center text-md-center">
-		  <img src="../src/Imagens/puc.png" class="img-fluid" style="max-width: 10%; min-width: 60px;">
-		</div>
-	  </div>
-	</div>
-  </footer>
-
+		</footer>
+	</section>
 
 
 
@@ -197,3 +199,91 @@
 </body>
 
 </html>
+
+<!-- Antiga modal de avaliacao -->
+<!-- <div> 
+	 <div class="text-center"> 
+		Botão para acionar modal 
+		<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ExemploModalCentralizado">
+			Demonstração de avaliação
+		</button> 
+
+		Modal 
+		<div class="modal fade" id="ExemploModalCentralizado" tabindex="-1" role="dialog"
+			aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="TituloModalCentralizado">Avaliação da Consulta</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+
+						<section class="align-items-center">
+							<div class="rating">
+								<p>Atenção do Profissional:</p>
+								<div class="stars">
+									<input type="radio" id="star5" name="rating1" value="5">
+									<label for="star5"></label>
+									<input type="radio" id="star4" name="rating1" value="4">
+									<label for="star4"></label>
+									<input type="radio" id="star3" name="rating1" value="3">
+									<label for="star3"></label>
+									<input type="radio" id="star2" name="rating1" value="2">
+									<label for="star2"></label>
+									<input type="radio" id="star1" name="rating1" value="1">
+									<label for="star1"></label>
+								</div>
+							</div>
+							<div class="rating">
+								<p>Pontualidade:</p>
+								<div class="stars">
+									<input type="radio" id="star10" name="rating2" value="5">
+									<label for="star10"></label>
+									<input type="radio" id="star9" name="rating2" value="4">
+									<label for="star9"></label>
+									<input type="radio" id="star8" name="rating2" value="3">
+									<label for="star8"></label>
+									<input type="radio" id="star7" name="rating2" value="2">
+									<label for="star7"></label>
+									<input type="radio" id="star6" name="rating2" value="1">
+									<label for="star6"></label>
+								</div>
+							</div>
+							<div class="rating">
+								<p>Satisfação com a sessão:</p>
+								<div class="stars">
+									<input type="radio" id="star15" name="rating3" value="5">
+									<label for="star15"></label>
+									<input type="radio" id="star14" name="rating3" value="4">
+									<label for="star14"></label>
+									<input type="radio" id="star13" name="rating3" value="3">
+									<label for="star13"></label>
+									<input type="radio" id="star12" name="rating3" value="2">
+									<label for="star12"></label>
+									<input type="radio" id="star11" name="rating3" value="1">
+									<label for="star11"></label>
+								</div>
+							</div>
+
+
+
+							<form name="Cadastro" method="GET" action="src/js/script.js"></form> 
+
+		 Caixa de texto
+		<div class="comments">
+			<p>Comentários ajudam a ver como podemos te ajudar! <br>(Máx. 400 Caracteres)</p>
+			<textarea id="comment" rows="4" cols="50" placeholder="Digite seus comentários aqui..."></textarea>
+		</div>
+
+		</section>
+
+
+	</div> 
+	 <div class="modal-footer">
+		<button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+		<button class="btn btn-primary" id="saveBtn">Salvar Avaliação</button>
+	</div>
+</div>-->

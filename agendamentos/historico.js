@@ -16,6 +16,8 @@ const status = localStorage.getItem("status");
 
 const agendamento = { data, hora, nome };
 
-if(status != 0){
+if(String != 0){
     exibirAgendamento(agendamento);
+    
 }
+

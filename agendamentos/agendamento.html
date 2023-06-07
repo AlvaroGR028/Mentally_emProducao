@@ -19,7 +19,8 @@
 <body>
 	<header>
 		<nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-			<a class="navbar-brand" href="../index.html"><img src="../src/Imagens/Mentally.png" alt="..." class="rounded-circle" width="100"></a>
+			<a class="navbar-brand" href="../index.html"><img src="../src/Imagens/Mentally.png" alt="..."
+					class="rounded-circle" width="100"></a>
 
 
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
@@ -40,23 +41,25 @@
 							Espaço do Usuário
 						</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="../espacoUsuario.html">Espaço do Usuário</a>
+							<a class="dropdown-item" href="../espacoUsuario.HTML">Espaço do Usuário</a>
 							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="agendar.html">Agende sua Consulta Online</a>
+							<a class="dropdown-item" href="agendar.HTML">Agende sua Consulta Online</a>
 							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="agendamento.html">Confira seus agendamentos</a>
+							<a class="dropdown-item" href="agendamento.HTML">Confira seus agendamentos</a>
 							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="historicoConsultas.html">Historico de consultas</a>
+							<a class="dropdown-item" href="historicoConsultas.HTML">Historico de consultas</a>
 						</div>
 					</li>
 
 				</ul>
-				<div>								
-					
+				<div>
+
 					<ul class="navbar-nav mr-0">
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle dropName" href="#" id="navbarDropdown" role="button"
-								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <p id='logado'></p> </a>	
+								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<p id='logado'></p>
+							</a>
 
 							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 								<a class="dropdown-item" href="../perfilUsuario.html">Alterar Perfil</a>
@@ -70,46 +73,72 @@
 		</nav>
 	</header>
 
-	<br>
-
-	<main>
-		<a type="button" class="btn btn-info" href="agendar.html">Novo agendamento</a>
-		<a type="button" class="btn btn-info" href="historicoConsultas.html">Consulta passadas</a>
-	</main>
-
-	<br>
+	<div class="botoesSuperiores">
+		<a type="button" class="btn btn-info" href="agendar.HTML">Novo agendamento</a>
+		<a type="button" class="btn btn-info" href="historicoConsultas.HTML">Consulta passadas</a>
+	</div>
 
 	<div class="retangulo">
-        <p>Consultas agendadas:</p>
-        <div class="view">
-            <div class="quadradolista1">
-                <ul id="lista">
-            </div>
-        </div>
+		<p>Consultas agendadas:</p>
 
-        <button id="encerrarConsulta" type="submit" onclick="concluirConsulta()">Encerrar Consulta</button>
+		<div class="view">
+
+			<div class="quadradolista1">
+				<ul id="lista">
+				</ul>
+			</div>
+
+			<div id="infoBox">
+
+				<button id="whatsappBtn">
+					<figure>
+						<img src="../src/Imagens/whatsapp.png" alt="Contato para Video chamada" id="msgConsulta">
+						<figcaption>Entre em contato</figcaption>
+					</figure>
+				</button>
+
+				<div class="instrucoes">
+					<h5>Instruções para realização da consulta</h5>
+					<p>Ao clicar em "Entre em contato" você será redirecionado para ao chat com seu atendente, junto a uma mensagem pré gravada que deverá ser encaminhada para o Psicologo.</p>
+					<p>Após isso o profissional encaminhará um link para seu Atendimento Online pela plataforma "MEET do Google". A plataforma deve estar instalada em seu dispositivo móvel ou realizar o acesso pela Web.</p>
+
+				</div>
+
+				<!-- Iniciar conversa no WhatsApp -->
+				<div class="caixaBotoes">
+				<button id="encerrarConsulta" type="submit" onclick="concluirConsulta()">Confirmar Consulta</button>
+				
+				<button id="cancelarConsulta" href="#">Cancelar Consulta</button>
+				</div>
+			</div>
+
+		</div>
 
 
-        </ul>
 
-    </div>
 
-    </div>
 
-    <br>
-    <br>
-    <br>
-    <h1>🔴Instruções para realização da consulta por chamada de vídeo:</h1>
-	<br>
+	</div>
+
+	</div>
+
+
+
+
+
+
+
+
+
 	<footer class="border-top text-muted bg-dark fixed-footer">
 		<div class="container">
-		  <div class="row py-1">
-			<div class="col-12 text-center text-md-center">
-			  <img src="../src/Imagens/puc.png" class="img-fluid" style="max-width: 10%; min-width: 60px;">
+			<div class="row py-1">
+				<div class="col-12 text-center text-md-center">
+					<img src="../src/Imagens/puc.png" class="img-fluid" style="max-width: 10%; min-width: 60px;">
+				</div>
 			</div>
-		  </div>
 		</div>
-	  </footer>
+	</footer>
 
 
 	<!-- JavaScript (Opcional) -->

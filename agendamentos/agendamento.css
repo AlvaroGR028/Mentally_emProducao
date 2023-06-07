@@ -1,83 +1,138 @@
 
-.retangulo {
-  width: auto;
-  height: 200px;
-  background-color: rgb(66, 136, 177);
-  margin-bottom: 30px;
-}
-
-.view {
-  -webkit-box-shadow: 2px 2px 15px 6px rgba(0, 0, 0, 0.34);
-  box-shadow: 2px 2px 15px 6px rgba(0, 0, 0, 0.34);
-  border-radius: 5px;
-  margin: 0 auto;
-  padding: 15px;
-  width: 95%;
-  height: 200px;
-  background-color: rgb(149, 158, 162);
-}
-
-.quadradolista1 {
-  -webkit-box-shadow: 2px 2px 15px 6px rgba(0, 0, 0, 0.34);
-  box-shadow: 2px 2px 15px 6px rgba(0, 0, 0, 0.34);
-  width: 25%;
-  height: 120px;
-  padding: 20px;
-  border-radius: 5px;
-  background-color: rgb(230, 247, 255);
-}
-
-
-.botaoconcluido {
-  -webkit-box-shadow: 2px 2px 15px 6px rgba(0, 0, 0, 0.34);
-  box-shadow: 2px 2px 15px 6px rgba(0, 0, 0, 0.34);
-  border-radius: 5px;
-  padding: 7px 5px;
-  width: 40px;
-  color: white;
-  background-color: rgb(216, 14, 14);
-  border: 1px solid black;
-  border-radius: 5px;
-  font-family: Arial, Helvetica, sans-serif;
-  text-decoration: none;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  width: 30%;
-  margin-top: 0 auto;
-  cursor: pointer;
-}
-
-#encerrarConsulta {
-  -webkit-box-shadow: 2px 2px 15px 6px rgba(0, 0, 0, 0.34);
-  box-shadow: 2px 2px 15px 6px rgba(0, 0, 0, 0.34);
-  border-radius: 5px;
-  padding: 7px 5px;
-  width: 40px;
-  color: white;
-  background-color: rgb(227, 10, 10);
-  border: 1px solid black;
-  border-radius: 5px;
-  font-family: Arial, Helvetica, sans-serif;
-  text-decoration: none;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 1em;
-  display: block;
-  width: 30%;
-  cursor: pointer;
-}
-
+/* alinhamento do nome do usuario */
 .dropName{
 	display: flex;
   align-items: center;
   }
 
+/* .botoesSuperiores */
+.botoesSuperiores{
+  margin: 1.5em;
+}
+
+/* retangulo azul */
+.retangulo {
+  width: auto;
+  height: 15em;
+  background-color: rgb(66, 136, 177);
+  margin-bottom: 30px;
+}
+
+/* box cinza */
+.view {
+  display: flex;
+  -webkit-box-shadow: 2px 2px 15px 6px rgba(0, 0, 0, 0.34);
+  box-shadow: 2px 2px 15px 6px rgba(0, 0, 0, 0.34);
+  border-radius: 5px;
+  margin: 0 auto;
+  padding: 1em 1em;
+  width: 95%;
+  height: 15em;
+  background-color: rgb(149, 158, 162);
+}
+
+/* box Da consulta */
+.quadradolista1 {
+  width: 25%;
+  height: 13em;
+  padding: 2em;
+  border-radius: 5px;
+  background-color: rgb(230, 247, 255);
+}
+
+  /* box informacoes */
+#infoBox{
+    border-radius: 5px;
+    margin: 0 auto;
+    padding: 15px;
+    width: 73%;
+    height: 13em;
+    background-color: rgb(230, 247, 255);
+    display: flex;
+  }
+
+  /* imagem do whatsapp */
+  #whatsappBtn {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+  }
+  
+  #whatsappBtn img {
+    background-color: transparent;
+  }
+  
+  #msgConsulta{
+    width: 3.5em;
+    display: inline-block;
+  }
+
+  #whatsappBtn {
+  display: inline-block;
+  vertical-align: top; /* Alinha o botão ao topo */
+  width: 15%; 
+  margin-right: 2em;
+}
+
+/* instrucoes */
+.instrucoes {
+  display: inline-block;
+  width: 60%; /* Ajuste a largura conforme necessário */
+  vertical-align: top; /* Alinha a div ao topo */
+  word-wrap: break-word;
+  margin-right: 1.5em;
+  }
+
+  
+/* Botões laterais */
+  .caixaBotoes {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: auto;
+  }
+  
+  #encerrarConsulta {
+    display: inline-block;
+    vertical-align: top; 
+    border-radius: 5px;
+    padding: 3px;
+    width: 10em;
+    color: white;
+    background-color: rgb(38, 214, 22);
+    border: 1px solid black;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    cursor: pointer;
+  }
+  
+  #cancelarConsulta{
+    display: inline-block;
+    vertical-align: top; 
+    border-radius: 5px;
+    padding: 3px;
+    width: 10em;
+    color: white;
+    background-color: rgb(227, 10, 10);
+    border: 1px solid black;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    cursor: pointer;
+  }
+
+/* footer */
   .fixed-footer {
     position: fixed;
     bottom: 0;
     width: 100%;
   }
-  
