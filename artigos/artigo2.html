@@ -11,9 +11,19 @@
 		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<!--header CSS -->
 	<link rel="stylesheet" href="../src/css/header.css">
-	<link rel="stylesheet" href="agendamento.css">
+	<link rel="stylesheet" type="text/css" href="../src/css/espacoUsuario.css">
+	<link rel="stylesheet" type="text/css" href="../src/css/artigos.css">
 
+	<!-- <style>
+		.conteudo{
+			margin: 60px;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+		.publicado{
+			font-size: 9px;
+		}
 
+	</style> -->
 </head>
 
 <body>
@@ -21,7 +31,6 @@
 		<nav class="navbar navbar-expand-lg navbar-light bg-transparent">
 			<a class="navbar-brand" href="../index.html"><img src="../src/Imagens/Mentally.png" alt="..."
 					class="rounded-circle" width="100"></a>
-
 
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
 				aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
@@ -34,7 +43,6 @@
 					<li class="nav-item active">
 						<a class="nav-link" href="../index.html">Home <span class="sr-only">(página atual)</span></a>
 					</li>
-
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
 							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -43,23 +51,25 @@
 						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 							<a class="dropdown-item" href="../espacoUsuario.HTML">Espaço do Usuário</a>
 							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="agendar.HTML">Agende sua Consulta Online</a>
+							<a class="dropdown-item" href="../agendamentos/agendar.HTML">Agende sua Consulta Online</a>
 							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="agendamento.HTML">Confira seus agendamentos</a>
+							<a class="dropdown-item" href="../agendamentos/agendamento.HTML">Confira seus agendamentos</a>
 							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="historicoConsultas.HTML">Historico de consultas</a>
+							<a class="dropdown-item" href="../agendamentos/historicoConsultas.HTML">Historico de
+								consultas</a>
 						</div>
 					</li>
-
+					<li class="nav-item active">
+						<a class="nav-link" href="../artigos.html">Artigos <span class="sr-only">(página atual)</span></a>
+					</li>
 				</ul>
-				<div>
 
+				<div>								
+					
 					<ul class="navbar-nav mr-0">
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle dropName" href="#" id="navbarDropdown" role="button"
-								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								<p id='logado'></p>
-							</a>
+								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <p id='logado'></p> </a>	
 
 							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 								<a class="dropdown-item" href="../perfilUsuario.html">Alterar Perfil</a>
@@ -72,60 +82,38 @@
 			</div>
 		</nav>
 	</header>
+<!-- -->
+<br><br>
+<main class="" id="">
 
-	<div class="botoesSuperiores">
-		<a type="button" class="btn btn-info" href="agendar.HTML">Novo agendamento</a>
-		<a type="button" class="btn btn-info" href="historicoConsultas.HTML">Consulta passadas</a>
-		<a type="button" class="btn btn-warning" href="../metodos.html"> Guias</a>
-	</div>
+	<div>
+		<diV align="center">
+			<img src="../src/Imagens/respiracao.jpg" class="imgMeditacao" alt="">
+			<img src="../src/Imagens/respiracao2.png" class="imgMeditacao" alt="">
+		</diV>
 
-	<div class="retangulo">
-		<p>Consultas agendadas:</p>
 
-		<div class="view">
-
-			<div class="quadradolista1">
-				<ul id="lista">
-				</ul>
-			</div>
-
-			<div id="infoBox">
-
-				<button id="whatsappBtn">
-					<figure>
-						<img src="../src/Imagens/whatsapp.png" alt="Contato para Video chamada" id="msgConsulta">
-						<figcaption>Entre em contato</figcaption>
-					</figure>
-				</button>
-
-				<div class="instrucoes">
-					<h5>Instruções para realização da consulta</h5>
-					<p>Ao clicar em "Entre em contato" você será redirecionado para ao chat com seu atendente, junto a uma mensagem pré gravada que deverá ser encaminhada para o Psicologo.</p>
-					<p>Após isso o profissional encaminhará um link para seu Atendimento Online pela plataforma "MEET do Google". A plataforma deve estar instalada em seu dispositivo móvel ou realizar o acesso pela Web.</p>
-
-				</div>
-
-				<!-- Iniciar conversa no WhatsApp -->
-				<div class="caixaBotoes">
-				<button id="encerrarConsulta" type="submit" onclick="concluirConsulta()">Confirmar Consulta</button>
-				
-				<button id="cancelarConsulta" href="#">Cancelar Consulta</button>
-				</div>
-			</div>
-
+	<div Align="justify" class="conteudo">
+		<h1>Como a respiração pode contribuir com o controle da ansiedade?</h1>
+			<p class="publicado">	POR HOSPITAL ISRAELITA ALBERT EINSTEIN EM 03/01/2023 | ATUALIZADO EM 29/01/2023</p><br><br>
+			<p>A respiração é mais do que apenas um meio de sobrevivência. Quando praticada de maneira consciente, ela também pode ser uma ferramenta poderosa de controle da ansiedade e outros quadros relacionados à saúde mental.</p>
+			<p>	Adriana Gasparini, terapeuta integrativa do Einstein, dá mais detalhes sobre a importância de trazer exercícios de respiração para o dia a dia e ensina técnicas simples que podem ser feitas a qualquer momento e lugar.</p>
+		
+		Confira!
+		<div align="center">
+			<h4>Meditação para aliviar ansiedade</h4>
+			<iframe width="640" height="360" src="https://www.youtube.com/embed/j5ZEna0VnHk?list=PLB_rcPiqiMPxm4W9L_2ZPx3diL5doBkFT" title="A respiração também é uma técnica de relaxamento | Atlas Mental Einstein" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 		</div>
 
-
-
-
-
 	</div>
-
+		<br><br>
 	</div>
+</main>
+<br><br><br><br>
 
 
 
-	<footer class="border-top text-muted bg-dark fixed-footer">
+	<footer class="border-top text-muted bg-dark">
 		<div class="container">
 			<div class="row py-1">
 				<div class="col-12 text-center text-md-center">
@@ -137,9 +125,7 @@
 
 
 	<!-- JavaScript (Opcional) -->
-	<script src="agendamento.js"></script>
-	<script src="nomeUser.js"></script>
-
+	<script src="../src/js/nomeUser.js"></script>
 	<!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -153,3 +139,6 @@
 </body>
 
 </html>
+
+
+

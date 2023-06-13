@@ -1,0 +1,16 @@
+.containerMetodos {
+    display: flex;
+    flex-direction: column; /* Colocar os botões em coluna */
+    justify-content: center;
+    align-items: center;
+    margin: 2em auto; /* Para centralizar horizontalmente na página */
+  }
+  
+  .containerMetodos a {
+    margin-bottom: 1em; /* Espaçamento entre os botões */
+  }
+
+  .containerMetodos button {
+    width: 30em; /* Definir uma largura maior para os botões */
+    height: 3em; /* Definir uma altura para os botões */
+  }

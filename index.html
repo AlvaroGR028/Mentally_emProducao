@@ -69,36 +69,38 @@
       </div>
     </nav>
   </header>
- <!-- Imagem inicial -->
-<div class="jumbotron" id="jumbotron-inicial">
-  <div class="row">
-    <div class="col-md-3">
-      <img src="src/Imagens/ajuda.png" width="100%">
-    </div>
-    <div class="col-md-6">
-      <h1 class="display-4 displayInicial">Precisa de Ajuda?</h1>
-      <p class="lead leadInicial">Saiba que você não está sozinho!!!</p>
-      <hr class="my-3">
-      
-      <p id="frase" class="carousel-item active">Não devemos ser o produto das nossas circunstâncias, mas sim o resultado das nossas decisões. Para hoje, escolha cuidar mais de você. </p>
-
-      <div id="trocar-frase" class="setas-frase">
-        <span class="seta-direita">&#8250;</span>
-
+  <!-- Imagem inicial -->
+  <div class="jumbotron" id="jumbotron-inicial">
+    <div class="row">
+      <div class="col-md-3">
+        <img src="src/Imagens/ajuda.png" width="100%">
       </div>
-      <div class="imagem-container grupo-de-imagens">
-        <img src="src/Imagens/chat.png">
-        <img src="src/Imagens/integracao.png">
-        <img src="src/Imagens/coracao.png">
+      <div class="col-md-6">
+        <h1 class="display-4 displayInicial">Precisa de Ajuda?</h1>
+        <p class="lead leadInicial">Saiba que você não está sozinho!!!</p>
+        <hr class="my-3">
+
+
+        <p id="frase"> </p>
+        <div class="setas-frase">
+          <span id="trocar-fraseEsquerda" class="seta-esquerda">&#171;</span>
+          <span id="trocar-fraseDireita" class="seta-direita">&#187;</span>
+        </div>
+
+
+        <div class="imagem-container grupo-de-imagens">
+          <img src="src/Imagens/chat.png">
+          <img src="src/Imagens/integracao.png">
+          <img src="src/Imagens/coracao.png">
+        </div>
       </div>
-    </div>
-    <div class="col-md-3">
-      <img src="src/Imagens/escada.png" width="100%">
+      <div class="col-md-3">
+        <img src="src/Imagens/escada.png" width="100%">
+      </div>
     </div>
   </div>
-</div>
 
-  
+
   <!-- jumbotron -->
 
   <!-- O que oferecemos? -->
@@ -193,14 +195,21 @@
       "Sua saúde mental vale muito mais do que qualquer trabalho. ",
       "Você não está sozinho. Busque ajuda sempre que precisar! ",
       "Não devemos ser o produto das nossas circunstâncias, mas sim o resultado das nossas decisões. Para hoje, escolha cuidar mais de você.",
-      "Tire um tempinho para meditar, descansar o corpo e cuidar da sua saúde mental. O amor-próprio deve vir sempre em primeiro lugar. "
-    ];
-    
+      "Tire um tempinho para meditar, descansar o corpo e cuidar da sua saúde mental. O amor-próprio deve vir sempre em primeiro lugar.",
+      "Autodisciplina é autocuidado.  - M.Scott Peck",
+      "Mantenha a calma e faça um plano de autocuidado.",
+      "Faça da sua saúde mental uma prioridade.",
+      "Você tem que se nutrir para florescer.",
+      "Cuidar de si mesmo é produtivo."
+        ];
+
     // Inicializa o contador de frases
     var indiceFrase = 0;
-    
+    $("#frase").text(frases[indiceFrase]);
+
+
     // Adiciona um listener de clique no botão "Trocar frase"
-    $("#trocar-frase").on("click", function() {
+    $("#trocar-fraseDireita").on("click", function () {
       // Incrementa o contador de frases e define o novo conteúdo do parágrafo
       indiceFrase++;
       if (indiceFrase >= frases.length) {
@@ -208,8 +217,18 @@
       }
       $("#frase").text(frases[indiceFrase]);
     });
+
+    // Adiciona um listener de clique no botão "Trocar frase para a esquerda"
+    $("#trocar-fraseEsquerda").on("click", function () {
+      // Decrementa o contador de frases e define o novo conteúdo do parágrafo
+      indiceFrase--;
+      if (indiceFrase < 0) {
+        indiceFrase = frases.length - 1;
+      }
+      $("#frase").text(frases[indiceFrase]);
+    });
   </script>
-  
+
   <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -220,7 +239,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
     integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
- 
+
 </body>
 
 </html>

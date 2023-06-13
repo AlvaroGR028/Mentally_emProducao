@@ -1,4 +1,6 @@
-
+.botoesSuperiores{
+  margin: 1.5em;
+}
 /* alinhamento do nome do usuario */
 .dropName{
 	display: flex;

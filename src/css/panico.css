@@ -1,0 +1,20 @@
+
+.carousel-item img {
+    max-height: 35em; /* Defina a altura máxima desejada */
+    max-width: 100%; /* Defina a largura máxima como 100% */
+    margin: 0 auto; /* Centralize horizontalmente as imagens */
+    margin-bottom: 3em;
+  }
+  .carousel-indicators .carousel-control-prev-icon,
+  .carousel-indicators .carousel-control-next-icon {
+    filter: invert(100%); /* Inverte a cor do ícone */
+  }
+
+  .carousel-indicators li {
+    background-color: #000; /* Define a cor de fundo dos indicadores */
+  }
+
+  .carousel-indicators .active {
+    background-color: #b967da; /* Define a cor de fundo do indicador ativo */
+  }    
+

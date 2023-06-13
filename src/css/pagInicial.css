@@ -6,8 +6,6 @@
   font-size: 24px;
 }
 
-
-
 .displayInicial, .leadInicial, #frase{
     text-align: center;
 }
@@ -34,22 +32,27 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 30px;
+    font-size: 2em;
     cursor: pointer;
     border: none;
     text-align: center;
     margin-top: 0px; /* ajuste o valor aqui */
-
   }
 
+  .seta-esquerda {
+    margin-right: 0.8em;
+  }
     .seta-direita {
-    margin-left: 10px;
+    margin-left: 0.8em;
   }
-      
-  .setas-frase:hover {
+
+  .seta-esquerda:hover {
+    color: #b967da;
+  }    
+  .seta-direita:hover {
     color: #b967da;
   }
-  
+ 
 
 
 

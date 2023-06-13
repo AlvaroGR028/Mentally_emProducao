@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <!-- Meta tags Obrigatórias -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Mentally</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <!--header CSS -->
+  <link rel="stylesheet" href="src/css/header.css">
+  <link rel="stylesheet" href="src/css/pagInicial.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+			<a class="navbar-brand" href="index.html"><img src="src/Imagens/Mentally.png" alt="..."
+					class="rounded-circle" width="100"></a>
+
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+				aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+				<!-- lado esquerdo -->
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="index.html">Home <span class="sr-only">(página atual)</span></a>
+					</li>
+
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Espaço do Usuário
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="espacoUsuario.HTML">Espaço do Usuário</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="agendamentos/agendar.HTML">Agende sua Consulta Online</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="agendamentos/agendamento.HTML">Confira seus agendamentos</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="agendamentos/historicoConsultas.HTML">Historico de
+								consultas</a>
+						</div>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="artigos.html">Artigos <span class="sr-only">(página atual)</span></a>
+					</li>
+				</ul>
+
+				<div>
+
+					<ul class="navbar-nav mr-0">
+						<li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle dropName" href="#" id="navbarDropdown" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">  
+               <span id='logado'></span>
+            </a>	
+
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="perfilUsuario.html">Alterar Perfil</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" onclick='sair()'>Sair</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+
+
+      <main>
+
+          <br><br>
+        <div align="center">
+          <h4>Meditação para aliviar ansiedade</h4>
+          <iframe width="924" height="520" src="https://www.youtube.com/embed/sJjyX9W-E-Y" title="MEDITAÇÃO Guiada para Aliviar ANSIEDADE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <br><br>
+        <div align="center">
+          <h4>Meditação para equilibrio</h4>
+          <iframe width="924" height="520" src="https://www.youtube.com/embed/wkKrLwqxA90?list=PLnXTMjA8X5ldG_qrlu999FOzts59INLQ5" title="Meditação para equilíbrio. Simples e revigorante. | 12 Min - Pri Leite" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <br><br>
+        <div align="center">
+          <h4>Meditação para Purificação de pensamentos, palavras e ações</h4>
+          <iframe width="924" height="520" src="https://www.youtube.com/embed/sIER0oiJHUo?list=PLnXTMjA8X5ldG_qrlu999FOzts59INLQ5" title="Meditação para Purificação de pensamentos, palavras e ações | 15Min - Pri Leite" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <br><br>
+        <div align="center">
+          <h4>Meditação Guiada para Gratidão e Bem-estar</h4>
+          <iframe width="924" height="520" src="https://www.youtube.com/embed/KKC051pMbWQ?list=PLnXTMjA8X5ldG_qrlu999FOzts59INLQ5" title="Meditação Guiada para Gratidão e Bem-estar | 10 min - Pri Leite" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <br><br>
+
+      </main>
+
+
+
+
+
+  <!-- Rodapé -->
+  <footer class="border-top text-muted bg-dark">
+    <div class="container">
+      <div class="row py-1">
+        <div class="col-12 text-center text-md-center">
+          <img src="src/Imagens/puc.png" class="img-fluid" style="max-width: 10%; min-width: 60px;">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- JavaScript (Opcional) -->
+  <script> //trocar as frases do inicio
+    // Define um array com as frases que serão exibidas no carrossel
+    var frases = [
+      "Cuidar da sua saúde mental é um ato de amor-próprio.",
+      "Sua saúde mental vale muito mais do que qualquer trabalho. ",
+      "Você não está sozinho. Busque ajuda sempre que precisar! ",
+      "Não devemos ser o produto das nossas circunstâncias, mas sim o resultado das nossas decisões. Para hoje, escolha cuidar mais de você.",
+      "Tire um tempinho para meditar, descansar o corpo e cuidar da sua saúde mental. O amor-próprio deve vir sempre em primeiro lugar. "
+    ];
+    
+    // Inicializa o contador de frases
+    var indiceFrase = 0;
+    
+    // Adiciona um listener de clique no botão "Trocar frase"
+    $("#trocar-frase").on("click", function() {
+      // Incrementa o contador de frases e define o novo conteúdo do parágrafo
+      indiceFrase++;
+      if (indiceFrase >= frases.length) {
+        indiceFrase = 0;
+      }
+      $("#frase").text(frases[indiceFrase]);
+    });
+  </script>
+  
+  <script src="src/js/nomeUser.js"></script>
+
+  <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+ 
+</body>
+
+</html>

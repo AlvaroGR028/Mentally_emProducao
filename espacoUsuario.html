@@ -48,14 +48,19 @@
 								consultas</a>
 						</div>
 					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="artigos.html">Artigos <span class="sr-only">(página atual)</span></a>
+					</li>
 				</ul>
 
-				<div>								
-					
+				<div>
+
 					<ul class="navbar-nav mr-0">
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle dropName" href="#" id="navbarDropdown" role="button"
-								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <p id='logado'></p> </a>	
+								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<p id='logado'></p>
+							</a>
 
 							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 								<a class="dropdown-item" href="perfilUsuario.html">Alterar Perfil</a>
@@ -68,21 +73,25 @@
 			</div>
 		</nav>
 	</header>
+	<main>
+		<div id="boxMenu" class="container" align="center">
 
-	<div id="boxMenu" class="container" align="center">
+			<span id="tituloEspaco">
+				<p>Espaço do Usuário</p>
+			</span>
+			<a href="agendamentos/agendar.HTML"><button type="button" class="btn btn-success btn-menu">Agende sua
+					consulta</button></a><br><br>
+			<a href="agendamentos/agendamento.HTML"><button type="button" class="btn btn-info btn-menu">Meus
+					agendamentos</button></a><br><br>
+			<a href="agendamentos/historicoConsultas.HTML"><button type="button" class="btn btn-dark btn-menu">Consultas
+					passadas</button></a><br><br>
+			<a href="metodos.html"><button type="button" class="btn btn-warning btn-menu">Guias</button></a><br><br>
+			<a href="perfilUsuario.html"><button type="button" class="btn btn-warning btn-menu">Editar
+					perfil</button></a><br><br>
 
-		<a href="agendamentos/agendar.HTML"><button type="button" class="btn btn-success btn-menu">Agende sua
-				consulta</button></a><br><br>
-		<a href="agendamentos/agendamento.HTML"><button type="button" class="btn btn-info btn-menu">Meus
-				agendamentos</button></a><br><br>
-		<a href="agendamentos/historicoConsultas.HTML"><button type="button" class="btn btn-dark btn-menu">Consultas
-				passadas</button></a><br><br>
-		<a href="perfilUsuario.html"><button type="button" class="btn btn-warning btn-menu">Editar
-				perfil</button></a><br><br>
-		<a href="index.html"><button type="button" class="btn btn-outline-danger btn-menu">Sair</button></a><br><br>
-
-	</div>
-
+			<a href="index.html"><button type="button" class="btn btn-outline-danger btn-menu">Sair</button></a><br><br>
+		</div>
+	</main>
 
 
 	<footer class="border-top text-muted bg-dark fixed-footer">
@@ -111,6 +120,3 @@
 </body>
 
 </html>
-
-
-

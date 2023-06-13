@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <!-- Meta tags Obrigatórias -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Mentally</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <!--header CSS -->
+  <link rel="stylesheet" href="src/css/header.css">
+  <link rel="stylesheet" href="src/css/pagInicial.css">
+  <link rel="stylesheet" href="src/css/metodos.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+
+  <header>
+		<nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+			<a class="navbar-brand" href="index.html"><img src="src/Imagens/Mentally.png" alt="..."
+					class="rounded-circle" width="100"></a>
+
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+				aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+				<!-- lado esquerdo -->
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="index.html">Home <span class="sr-only">(página atual)</span></a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Espaço do Usuário
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="espacoUsuario.HTML">Espaço do Usuário</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="agendamentos/agendar.HTML">Agende sua Consulta Online</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="agendamentos/agendamento.HTML">Confira seus agendamentos</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="agendamentos/historicoConsultas.HTML">Historico de
+								consultas</a>
+						</div>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="artigos.html">Artigos <span class="sr-only">(página atual)</span></a>
+					</li>
+				</ul>
+
+				<div>								
+					
+					<ul class="navbar-nav mr-0">
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle dropName" href="#" id="navbarDropdown" role="button"
+								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">  
+                 <span id='logado'></span>
+              </a>	
+
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="perfilUsuario.html">Alterar Perfil</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" onclick='sair()'>Sair</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+  <main>
+
+    <div class="containerMetodos">
+      <a href="meditacao.html"><button type="button" class="btn btn-secondary btn-lg btn-block">Meditação</button></a>
+      <a href="yoga.html"><button type="button" class="btn btn-secondary btn-lg btn-block">Yoga</button></a>
+      <a href="panico.html"><button type="button" class="btn btn-secondary btn-lg btn-block">MindFulness</button></a>
+
+    </div>
+    
+
+    <div align="center">
+
+      <a class="navbar-brand" href="yoga.html">
+        <img src="src/Imagens/yogaArvore.png" alt="..." class="rounded-circle" width="300">
+      </a>
+
+      <a class="navbar-brand" href="meditacao.html">
+        <img src="src/Imagens/meditacao.png" alt="..." class="rounded-circle" width="300">
+      </a>
+
+      <a class="navbar-brand" href="panico.html">
+        <img src="src/Imagens/guia.png" alt="..." class="rounded-circle" width="300">
+      </a>
+
+    </div>
+  </main>
+
+
+
+
+  <!-- Rodapé -->
+  <footer class="border-top text-muted bg-dark">
+    <div class="container">
+      <div class="row py-1">
+        <div class="col-12 text-center text-md-center">
+          <img src="src/Imagens/puc.png" class="img-fluid" style="max-width: 10%; min-width: 60px;">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!-- JavaScript (Opcional) -->
+  <script src="src/js/nomeUser.js"></script>
+
+  <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -9,11 +9,15 @@ main {
 }
 
 #boxMenu{
-    background-image: linear-gradient(to bottom, #b967da, #ffffff);
+    background-image: linear-gradient(to bottom, #b967da, #f4d9ff );
 	border-radius: 10px;
 	width: 20em;
 	margin-top: 2em; /* Adicione essa linha */
 	padding-top: 2.5em;
+}
+
+#tituloEspaco{
+	font-size: 1.5em;
 }
 
 .lista-menu{
@@ -35,8 +39,10 @@ main {
   }
 
   .fixed-footer {
-	position: fixed;
+	margin-top: 2em;
 	bottom: 0;
 	width: 100%;
+	position: fixed;
   }
   
+   

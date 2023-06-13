@@ -1,4 +1,6 @@
-
+.botoesSuperiores{
+  margin: 1.5em;
+}
 
 .quadrado {
     -webkit-box-shadow: 2px 2px 15px 6px rgba(0, 0, 0, 0.34);

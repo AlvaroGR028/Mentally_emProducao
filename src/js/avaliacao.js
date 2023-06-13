@@ -149,7 +149,7 @@ function updateReviewCards(reviews) {
 
     ratings.innerHTML = `Data: ${agendamento.data} Hora: ${agendamento.hora}  Profissional: ${agendamento.nome}
 <br>
-    Atenção do Profissional: ${review.rating1}/5, Pontualidade: ${review.rating2}/5, Satisfação com a sessão: ${review.rating3}/5`;
+    Atenção do Profissional: ${review.rating1}/5 Pontualidade: ${review.rating2}/5 Satisfação com a sessão: ${review.rating3}/5`;
 
     cardBody.appendChild(ratings);
     cardBody.appendChild(comment);
@@ -185,7 +185,7 @@ window.addEventListener('load', function () {
 
       `Data: ${agendamento.data} Hora: ${agendamento.hora}  Profissional: ${agendamento.nome}
 <br>
-      Atenção do Profissional: ${review.rating1}/5, Pontualidade: ${review.rating2}/5, Satisfação com a sessão: ${review.rating3}/5;
+      Atenção do Profissional: ${review.rating1}/5 Pontualidade: ${review.rating2}/5 Satisfação com a sessão: ${review.rating3}/5;
 
         <p>Comentários: ${review.comment}</p>
 
